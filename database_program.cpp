@@ -30,7 +30,7 @@ class employee
 	void deleteData();
 	void backup(); //to view delected data
 }imp;
-SetConsoleTitle("Database Program By Dipan Bhusal");
+
 	void employee::displayData()
 	{
 			cout << "Id number: " <<  idNum << endl;
@@ -186,7 +186,7 @@ std::rename("temp.txt","employe_data.txt"); //renames temp.txt file to   employe
 	}
 int main()
 {
-	
+	SetConsoleTitle("Database Program By Dipan Bhusal");
 imp.choice();
 return 0;
 }
