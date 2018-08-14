@@ -18,8 +18,6 @@ class employee
 	int limit;
 	string name;
 	public:
-	employee();
-	~employee();
 	void choice();
 	int viewInfo();
 	void getInfo();
@@ -32,16 +30,7 @@ class employee
 	void deleteData();
 	void backup(); //to view delected data
 }imp;
-	employee *data;
-employee::employee(){
-
-data = new employee[limit];
- 
-}
-
-	employee::~employee(){
-		delete[]data;
-	}
+SetConsoleTitle("Database Program By Dipan Bhusal");
 	void employee::displayData()
 	{
 			cout << "Id number: " <<  idNum << endl;
@@ -197,7 +186,7 @@ std::rename("temp.txt","employe_data.txt"); //renames temp.txt file to   employe
 	}
 int main()
 {
-	SetConsoleTitle("Database Program By Dipan Bhusal");
+	
 imp.choice();
 return 0;
 }
